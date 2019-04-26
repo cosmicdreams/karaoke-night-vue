@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+    <meta content="Put your description here." name="Description">
+    <style>
+        
+    </style>
+    <title>Karaoke app in Vue</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.common.dev.js"></script>
+</head>
+<body>
+<div id="app">
+    <div v-for="item in setList">
+        <karaoke-item :item="item"></karaoke-item>
+    </div>
+</div>
+<template id="item-template">
+    <div>
+        <div class="col">
+            <div class="singer">{{ item.singer }}</div>
+        </div>
+        <div class="col">
+            <div class="song">{{ item.song }}</div>
+            <div class="artist">By {{ item.artist }}</div>
+        </div>
+    </div>
+</template>
+<script>
+    
+</script>
+</body>
+
+</html>
